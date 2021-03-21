@@ -109,7 +109,7 @@ type CartMember struct {
 func CreateCart(key, token, list, name, description, date string) (Cart, error) {
 
 	// Get request
-	request, err := http.NewRequest("POST", fmt.Sprintf("https://api.trello.com/1/cards?key=%s&token=%s&idList=%s&name=%s&desc=%s&due=%s", key, token, idList, url.QueryEscape(name), url.QueryEscape(description), date), nil)
+	request, err := http.NewRequest("POST", fmt.Sprintf("https://api.trello.com/1/cards?key=%s&token=%s&idList=%s&name=%s&desc=%s&due=%s", key, token, list, url.QueryEscape(name), url.QueryEscape(description), date), nil)
 	if err != nil {
 		return Cart{}, err
 	}
