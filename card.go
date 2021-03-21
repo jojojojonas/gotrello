@@ -106,7 +106,7 @@ type CartMember struct {
 }
 
 // To create an cart
-func CreateCart(key, token, idList, name, description, date string) (Cart, error) {
+func CreateCart(key, token, list, name, description, date string) (Cart, error) {
 
 	// Get request
 	request, err := http.NewRequest("POST", fmt.Sprintf("https://api.trello.com/1/cards?key=%s&token=%s&idList=%s&name=%s&desc=%s&due=%s", key, token, idList, url.QueryEscape(name), url.QueryEscape(description), date), nil)
