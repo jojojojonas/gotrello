@@ -7,7 +7,7 @@ With this library you should be able to interact with the Trello API in the easi
 To import the library into your project you have to execute the following command.
 
 ```console
-go get github.com/jojojojonas/gotrello
+go get github.com/gowizzard/gotrello
 ```
 
 ## Card
